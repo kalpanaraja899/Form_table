@@ -1,0 +1,114 @@
+<html>
+<head>
+<style>
+.container{
+   max-width: 1200px;
+   margin: auto;
+   padding: 30px;
+   border: 2px solid #000099;  
+}
+.heading{
+  font-size:28px;
+}
+   table{  
+            border-collapse: collapse;  
+            width: 100%;   
+        }  
+    th,td{ 
+        padding: 10px;  
+        text-align:left;
+        font-size:20px;
+    }  
+input{
+width:80%;
+padding: 5px;  
+}
+          
+</style>
+</head>
+<body>
+<div class="container">
+<h1 style="color:#000099">Class Catalog Maintenance </h1>
+<p><div class="heading"><b>classes</b></div></p>
+  <table >  
+    <tr>  
+        <th>Name</th>  
+        <th>Number</th>  
+        <th>Start</th>  
+        <th>Length</th>
+        <th>Weekday</th>
+        <th>Time</th>
+        <th>Description</th>
+    </tr>  
+    <tr>  
+        <td>Web Design <span>&#8544;</span></td>  
+        <td>IT 101</td>  
+        <td>9/1/2016</td>
+        <td>10</td>
+        <td>MWF</td>
+        <td>10:00</td>
+        <td>HTML5 and CSS3</td>  
+    </tr>  
+    <tr>  
+        <td>Web Design<span>&#8545;</span></td>  
+        <td>IT 102</td>  
+        <td>1/1/2017</td>
+        <td>10</td>
+        <td>MWF</td>
+        <td>14:00</td>
+        <td>JavaScript,JQuery,JQuery UI and Bootstrap</td>  
+    </tr>  
+</table>  
+<table >
+<p><div class="heading"><b>Add a class</b></div></p>
+<div><form style="padding-top:0px">
+<tr>
+<td>Class Name:</td>
+<td ><input type="text"  id="className" name="className"/></td>
+</tr></br>
+<tr>
+<td>Class Number:</td>
+<td><input type="text"  id="classNumber" name="classNumber"></td>
+</tr>
+<tr>
+<td>Start Date:</td>
+<td><input type="text"  id="Date" name="Date"/></td>
+</tr>
+<tr>
+<td>Class length(in weeks):</td>
+<td><select style="width:80%;padding: 5px;  ">
+<option name="select" value="Select">Select</option>
+<option name="length" value="1">1</option>
+<option name="length" value="2">2</option>
+</select></td>
+</tr>
+<tr>
+<td>Weekday and Time:</td>
+<td><select style="width:80%;padding: 5px;  ">
+<option name="select" value="Select">Select</option>
+<option name="weekday" value="Monday">Monday</option>
+<option name="weekday" value="Tuesday">Tuesday</option>
+<option name="weekday" value="Wednesday">Wednesday</option>
+<option name="weekday" value="Thursday">Thursday</option>
+<option name="weekday" value="Friday">Friday</option>
+<option name="weekday" value="Saturday">Saturday</option>
+<option name="weekday" value="Sunday">Sunday</option>
+</select></td></td>
+<td><select style="width:100%;padding: 5px;  ">
+<option name="select" value="Select">Select</option>
+<option name="time" value="12 Hrs">12 Hrs</option>
+<option name="time" value="24 Hrs">24 Hrs</option>
+</select></td></td>
+</tr>
+<tr><td>Class Description</td></tr>
+<tr><td><textarea style="height:100px;width:100%"></textarea></td>
+</tr>
+<tr>  
+    <td ><div align="left"><input type="Submit" id="Add" value="add"/></td>
+   <td ><div align="left"><input type="Submit" id="Clear" value="Clear"/></td>
+</table>
+</form>
+</div>
+</div>
+</body>
+</html>
